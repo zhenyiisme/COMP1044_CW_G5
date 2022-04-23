@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="DatabaseCW.css">
+    <title>G5Library</title>
+    <link rel="icon" href="images/Icon.jpg" width="3" height="auto"/>
+  </head>
+  <body>
+      
+        <div class="header">
+            <div class="navbar">
+                <div class="home">
+                <a href="Mainpage.html"><h1>G5 Library Logs</h1></a>
+                </div>
+                <nav>
+                    <ul>
+                      <li><a href="AddBook.html"class="nav">Add Book</a></li>
+                      <li><a href="AddMember.html" class="nav">Add Member</a></li>
+                      <li><a href="SearchBook.html" class="nav">Search Book</a></li>
+                      <li><a href="SearchMember.html" class="nav">Search Member</a></li>
+                      <li><a href="rent.html" class="nav">Borrow Book</a></li>
+                      <li><a href="updateborrowdetails.php" class="nav">Update Borrowing Details</a></li>
+                      <li><a href="updatememberdetails.php" class="nav">Update Member Details</a></li>
+                      <li><a href="includes/logoutinc.php" class="nav">Log Out</a></li>
+                    </ul>
+                </nav>			
+            </div>
+        </div>
+
+        <div class="mainAddMember">
+            <form action="index.php" method="POST">
+                <label>Add a Member</label><br/><br/>
+
+                First Name: <input type="text" name="firstname" /><br />
+                Last Name: <input type="text" name="lastname" /><br />
+
+                <label for="">Gender:</label>
+                <select name="gender" class="form-control">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                </select><br />
+
+                Address: <input type="text" name="address" /><br />
+                Contact Number: <input type="number" name="contact" /><br />
+
+                <label for="">Type:</label>
+                <select name="type" class="form-control">
+                <option value="Teacher">Teacher</option>
+                <option value="Student">Student</option>
+                </select><br />
+
+                <label for="">Year or Level:</label>
+                <select name="year_level" class="form-control">
+                <option value="Faculty">Faculty</option>
+                <option value="First Year">First Year</option>
+                <option value="Second Year">Second Year</option>
+                <option value="Third Year">Third Year</option>
+                <option value="Fourth Year">Fourth Year</option>
+                <option value="Other">Other</option>
+                </select><br />
+                <label for="">Ban Status:</label>
+                <select name="ban_status" class="form-control">
+                <option value="Active">Active</option>
+                <option value="Banned">Banned</option>
+                </select><br /><br/>
+
+                <input type="submit" name="AddMemberSubmit" />
+            </form>
+        </div>
+
+        <footer>
+          <button class="button circle" onclick="myFunction()">&nbsp;?&nbsp;</button>
+          <div class="hide" id="help">
+            Fill in member information and submit once complete
+          </div>
+          <script src="helpbutton.js"></script>
+        </footer>
+    
+    
+    
+    
+    
+    
+  </body>
+</html>
