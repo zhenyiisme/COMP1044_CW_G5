@@ -1,0 +1,185 @@
+@font-face{
+    src: url(fonts/ComicHelvetic_Light.otf);
+    font-family: Comic;
+}
+
+mark{
+    background-color: #ffc001;
+}
+
+body{
+    background-color: rgb(34, 34, 34);
+    font-family: Comic;
+}
+
+footer{
+	text-align: right;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	color: white;
+	position: fixed;
+}
+
+.circle{
+	border-radius: 50%;
+}
+
+.hide{
+	display: none
+}
+
+h1{
+    color: black;
+    margin-left: 5px;
+}
+
+.main a{
+    color: #ffc001; 
+}
+
+.mainAddBook a{
+    color: #ffc001; 
+}
+
+.mainsignup a{
+    color: #ffc001; 
+}
+
+p{
+    color: white;
+}
+
+.header{
+    position: sticky;
+    font-family: Comic;
+    display: flex;
+    align-items: center;
+    background: #ffc001;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%; 
+}
+
+.main{
+    font-family: comic;
+    margin-top: 430px;
+    text-align: center;
+    color: white;
+    
+}
+
+.mainAddBook{
+    font-family: comic;
+    margin-top: 310px;
+    text-align: center;
+    color: white;
+    
+}
+
+.mainAddMember{
+    font-family: comic;
+    margin-top: 300px;
+    text-align: center;
+    color: white;
+    
+}
+
+.mainsignup{
+    font-family: comic;
+    margin-top: 330px;
+    text-align: center;
+    color: white;
+    
+}
+
+.mainlogin{
+    font-family: comic;
+    margin-top: 330px;
+    text-align: center;
+    color: white;
+    
+}
+
+.mainrent{
+    font-family: comic;
+    margin-top: 380px;
+    text-align: center;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    background: #ffc001;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%; 
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    margin-right: 100px;
+}
+
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a.nav:hover{
+    text-decoration: none;
+    color: white;
+    background: rgb(34, 34, 34);
+}
+
+a.nav:active{
+    text-decoration: none;
+    color: #ffc001;
+    background: rgb(34, 34, 34);
+}
+
+a.nav{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+table{
+    border: 1px solid #ffc001;
+    color: black;
+    background-color: #ffc001;
+}
+
+tr, th, td{
+    background-color: white;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button{
+    cursor: pointer;
+    border: 1px solid #555;
+    text-align: center;
+    padding: 5px;
+    margin-left: 8px;
+}
+.dark{
+    background-color: #222;
+    color: #e6e6e6;
+}

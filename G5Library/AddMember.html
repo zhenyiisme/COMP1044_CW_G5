@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="DatabaseCW.css">
+		<title>G5Library</title>
+		<link rel="icon" href="images/Icon.jpg" width="3" height="auto"/>
+	</head>
+	
+	<body>
+        <div class="header">
+            <div class="navbar">
+                <a href="Mainpage.html"><h1>G5 Library Logs</h1>
+                <nav>
+                    <ul>
+						<li><a href="AddBook.html"class="nav">Add Book</a></li>
+						<li><a href="AddMember.html" class="nav">Add Member</a></li>
+						<li><a href="SearchBook.html" class="nav">Search Book</a></li>
+						<li><a href="SearchMember.html" class="nav">Search Member</a></li>
+						<li><a href="rent.html" class="nav">Borrow Book</a></li>
+						<li><a href="updateborrowdetails.php" class="nav">Update Borrowing Details</a></li>
+						<li><a href="updatememberdetails.php" class="nav">Update Member Details</a></li>
+						<li><a href="includes/logoutinc.php" class="nav">Log out</a></li>
+                    </ul>
+                </nav>			
+            </div>
+        </div>
+
+        <div class="mainAddMember">
+            <form action="index.php" method="POST">
+                <label>Add a Member</label><br/><br/>
+
+                First Name: <input type="text" name="firstname" /><br/>
+                Last Name: <input type="text" name="lastname" /><br/>
+
+                <label for="">Gender:</label>
+                <select name="gender" class="form-control">
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+                </select><br/>
+
+                Address: <input type="text" name="address" /><br/>
+                Contact Number: <input type="number" name="contact" /><br/>
+
+                <label for="">Type:</label>
+					<select name="type" class="form-control" onchange="teacherstudent(this)">
+						<option value="Student">Student</option>
+						<option value="Teacher">Teacher</option>
+					</select><br />
+				
+                <label for="" >Year:</label>
+					<select name="year_level" class="form-control" id="studentonly">
+						<option value="First Year">First Year</option>
+						<option value="Second Year">Second Year</option>
+						<option value="Third Year">Third Year</option>
+						<option value="Fourth Year">Fourth Year</option>
+					</select><br/>
+				
+                <label for="">Ban Status:</label>
+                <select name="ban_status" class="form-control">
+					<option value="Active">Active</option>
+					<option value="Banned">Banned</option>
+                </select><br/><br/>
+
+                <input type="submit" name="AddMemberSubmit" />
+            </form>
+			
+			<script>
+				function teacherstudent(select){
+				var x = document.getElementById('studentonly')
+					if(select.value == 'Teacher'){
+						x.style.display = 'none'
+						x.value = null
+					}
+					else
+							x.style.display = ''
+				}
+			</script>
+			
+        </div>
+		
+		<footer>
+			<button class="button circle" onclick="myFunction()">&nbsp;?&nbsp;</button>
+			<div class="hide" id="help">
+				Note. For delete function, please first search for item to delete.
+			</div>
+			<script src="helpbutton.js"></script>
+		</footer>
+ 
+  </body>
+</html>

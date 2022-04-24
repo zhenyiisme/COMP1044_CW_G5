@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="DatabaseCW.css">
+		<title>G5Library</title>
+		<link rel="icon" href="images/Icon.jpg" width="3" height="auto"/>
+	</head>
+	<body>
+		<div class="header">
+		  <div class="navbar">
+			  <a href="Mainpage.html"><h1>G5 Library Logs</h1>
+			  <nav>
+					<ul>
+						<li><a href="AddBook.html"class="nav">Add Book</a></li>
+						<li><a href="AddMember.html" class="nav">Add Member</a></li>
+						<li><a href="SearchBook.html" class="nav">Search Book</a></li>
+						<li><a href="SearchMember.html" class="nav">Search Member</a></li>
+						<li><a href="rent.html" class="nav">Borrow Book</a></li>
+						<li><a href="updateborrowdetails.php" class="nav">Update Borrowing Details</a></li>
+						<li><a href="updatememberdetails.php" class="nav">Update Member Details</a></li>
+						<li><a href="includes/logoutinc.php" class="nav">Log out</a></li>
+					</ul>
+				</nav>			
+			</div>
+		</div>
+		
+		<div class="mainAddBook">
+			<form action="index.php" method="POST">
+		  
+				<!-- add a book function -->
+				<label>Add a Book</label><br/><br/>
+				Book Title: <input type="text" name="book_title" /><br/>
+		  
+				<!--- dropdown menu!---> 
+				<div class="from-group-mb-3">
+					<label for="">Category:</label>
+					<select name="category" class="form-control">
+						<option value="General">General</option>
+						<option value="References">References</option>
+						<option value="Encyclopedia">Encyclopedia</option>
+						<option value="Science">Science</option>
+						<option value="Math">Math</option>
+						<option value="Newspaper">Newspaper</option>
+						<option value="English">English</option>
+					</select><br/>
+		  
+					Author: <input type="text" name="author" /><br/>
+					Book Copies: <input type="number" name="book_copies" value="1" min="1" max="1000" /><br/>
+					Publisher: <input type="text" name="book_pub" /><br/>
+					ISBN: <input type="text" name="isbn" /><br/>
+					Copyright Year: <input type="number" name="copyright_year" value="1901" min="1901" max="2155"/><br/>
+					Date Added: <input type="datetime-local" name="date_added" /><br/>
+				  
+					<label for="">Status:</label>
+					<select name="status" class="form-control">
+						<option value="New">New</option>
+						<option value="Old">Old</option>
+						<option value="Damage">Damage</option>
+					</select><br/><br/>
+					
+					<input type="submit" name="AddBookSubmit" />
+					<br/>
+				</div>
+			</form>
+		</div>
+		
+		<footer>
+			<button class="button circle" onclick="myFunction()">&nbsp;?&nbsp;</button>
+			<div class="hide" id="help">
+				Note. For delete function, please first search for item to delete.
+			</div>
+			<script src="helpbutton.js"></script>
+		</footer>
+		
+	</body>
+</html>

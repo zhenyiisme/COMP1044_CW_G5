@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="DatabaseCW.css" />
+    <title>G5Library</title>
+    <link rel="icon" href="images/Icon.jpg" width="3" height="auto" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="navbar">
+        <div class="home">
+          <a href="Mainpage.html"><h1>G5 Library Logs</h1></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="AddBook.html" class="nav">Add Book</a></li>
+            <li><a href="AddMember.html" class="nav">Add Member</a></li>
+            <li><a href="SearchBook.html" class="nav">Search Book</a></li>
+            <li><a href="SearchMember.html" class="nav">Search Member</a></li>
+            <li><a href="rent.html" class="nav">Borrow Book</a></li>
+            <li><a href="updateborrowdetails.php" class="nav">Update Borrowing Details</a></li>
+            <li><a href="updatememberdetails.php" class="nav">Update Member Details</a></li>
+            <li><a href="includes/logoutinc.php" class="nav">Log Out</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="main">
+      <form action="searchmember.php" method="POST">
+        <label>Search for a Member</label><br /><br />
+        <input type="text" name="searchMember" />
+        <input type="submit" name=">>>" />
+      </form>
+    </div>
+
+    <footer>
+			<button class="button circle" onclick="myFunction()">&nbsp;?&nbsp;</button>
+			<div class="hide" id="help">
+				Enter member name and submit to search for desired member
+			</div>
+			<script src="helpbutton.js"></script>
+		</footer>
+  </body>
+</html>
